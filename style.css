@@ -290,6 +290,8 @@ a:hover {
 .logo-iv { background: #fff; }
 .logo-iv.logo-text { background: #1a3a2a; color: #4ade80; }
 .logo-ca { background: #7c3aed; color: #fff; }
+.logo-osu { background: #fff; }
+.logo-osu.logo-text { background: #bb0000; color: #fff; }
 
 .job-title {
   font-size: 16px;
