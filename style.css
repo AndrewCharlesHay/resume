@@ -110,6 +110,32 @@ a:hover {
   border-bottom: 1px solid var(--border);
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-photo-wrap {
+  flex-shrink: 0;
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--border);
+  box-shadow: 0 0 0 6px rgba(88, 166, 255, 0.08);
+}
+
 .hero-eyebrow {
   font-size: 12px;
   font-weight: 600;
@@ -528,6 +554,17 @@ a:hover {
 @media (max-width: 640px) {
   .hero {
     padding: 48px 0 40px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-photo {
+    width: 120px;
+    height: 120px;
   }
 
   .job-meta {
